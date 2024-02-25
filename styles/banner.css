@@ -33,3 +33,80 @@
     background: url("../assets/Lupa.svg") no-repeat;
     background-position: 1em;
 }
+
+
+.banner_2 {
+    background-color: var(--gradiente);
+    text-align: center; 
+    padding: 1em 0;
+}
+
+.banner__titulo-2 {
+    font-weight: 300;
+    color: var(--branco);
+    margin-bottom: 1em;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__item {
+    margin: 2em 0.5em;
+}
+
+
+.ancoras__botao {
+    background-color: var(--laranja);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+    }
+    
+    .banner__pesquisa::placeholder {
+        background-position: 7em;
+    }
+
+    .banner__titulo-2 {
+        font-size: 24px;
+    }
+
+    .ancoras__botao {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__pesquisa {
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 10em;
+    }
+
+    .banner {
+        padding: 6em 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner_2 {
+        padding: 3em 25vw;
+        font-size: 24px;
+    }
+}
